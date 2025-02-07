@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b6c984;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #758b36;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav select, .nav input {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .icons {
+            display: flex;
+            gap: 15px;
+            size: 10px;
+        }
+        .cart-container {
+            width: 70%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .cart-summary {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cart-table th, .cart-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .cart-table th {
+            background: #758b36;
+            color: white;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+        }
+        .qty-control {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qty-control button {
+            background: #758b36;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .checkout-summary {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #758b36;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwcj8cF-gQ1vPwLcYbt0ISbftokPyzKIt-WA&s" alt="Logo">
+            <span>PB Looks</span>
+        </div>
+        <div class="nav">
+            <select>
+                <option>Dresses</option>
+                <option>Kids</option>
+                <option>Adult</option>
+                <option>Men</option>
+                <option>Women</option>
+            </select>
+            <select>
+                <option>Accessories</option>
+                <option>Braclets</option>
+                <option>Necklace</option>
+                <option>Earings</option>
+            </select>
+            <select>
+                <option>Footwear</option>
+                <option>Heels</option>
+                <option>Shoe</option>
+                <option>Formal shoe</option>
+                <option>Kids wear</option>
+            </select>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            <span>📧</span>
+            <span>👤</span>
+            <span>🏠</span>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-summary">Items in cart: 4</div>
+        <table class="cart-table">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Amount</th>
+            </tr>
+            <tr class="cart-item">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntgam0LoYdpgdksA_rIM4AaF2eTv2grfEOg&s" alt="Product 1"><br>TAGAS Toddler Girls Striped Print Puff Sleeve Bow Front Dress | Stripe Pattern Dress for Kids</td>
+                <td>$70</td>
+                <td class="qty-control">
+                    <button>-</button>
+                    1
+                    <button>+</button>
+                </td>
+                <td>$70</td>
+            </tr>
+            <tr class="cart-item">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoaMUInH3D8hCbw48bBOX5kukKz_mn2Equw&s" alt="Product 2"><br>SIYA Freeplay Velcro Flats</td>
+                <td>$40</td>
+                <td class="qty-control">
+                    <button>-</button>
+                    1
+                    <button>+</button>
+                </td>
+                <td>$40</td>
+            </tr>
+            <tr class="cart-item">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUEkVpSL0FIJooEaWWVqkkd_J_f_B1ilfE7g&s" alt="Product 3"><br>Girls Asthetika Set Of 2 Silk Thread & Kundan Stone Embellished Bangles</td>
+                <td>$15</td>
+                <td class="qty-control">
+                    <button>-</button>
+                    2
+                    <button>+</button>
+                </td>
+                <td>$15</td>
+            </tr>
+            <tr class="cart-item">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeUF52HpBQDDWKpMyeBNGM6-P4oUvkTvOKYA&s" alt="Product 4"><br>Power Puff Girls Style Pendant Necklace</td>
+                <td>$18</td>
+                <td class="qty-control">
+                    <button>-</button>
+                    1
+                    <button>+</button>
+                </td>
+                <td>$18</td>
+            </tr>
+        </table>
+        <div class="checkout-summary">
+            <p>Subtotal: $143</p>
+            <p>GST (10%): $14.3</p>
+            <p><strong>Grand Total: $157.3</strong></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 PB Looks. All Rights Reserved.
+    </div>
+</body>
+</html>
