@@ -23,6 +23,9 @@ nav a {
     color: white;
     font-weight: bold;
 }
+nav a:hover{
+    background-color: #625615;
+}
 /* Home Page Styles */
 .home {
     display: flex;
