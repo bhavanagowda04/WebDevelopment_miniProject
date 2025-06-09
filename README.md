@@ -1,4 +1,5 @@
 WebDevelopment Mini Project
+
 A collection of three foundational web projects implemented using HTML and CSS (with minimal JavaScript in the shopping cart). Each demo is hosted on GitHub Pages and showcases foundational concepts in front-end web development.
 
 🔗 Live Links
@@ -19,6 +20,7 @@ Menu: Categories (Starters, Main Course, Desserts) with item lists and descripti
 Contact: Contact form (name, email, message), location, operating hours.
 
 Key skills:
+
 Semantic structure (<header>, <nav>, <section>, <footer>).
 Styling with external CSS.
 Form setup with input, textarea, button.
